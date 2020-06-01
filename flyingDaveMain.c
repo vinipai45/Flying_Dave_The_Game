@@ -2,7 +2,7 @@
 #include<GL/glut.h>
 #include<time.h>
 #include<stdio.h>
-
+#include<unistd.h>
 
 float blockSpeed=0.2; // block dx value
 int cheats = 0;
@@ -163,7 +163,7 @@ void display(void){
 		glFlush();
 		printf("\nGAME OVER\n\n");
 		printf("%s You scored  %s" ,name,scs);
-		sleep(5);
+		usleep(5);
 		exit(0);
 	}
 
